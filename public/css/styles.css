@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+header{
+    background-color: #EAC926; 
+    font-size: 16px;
+}
+
+nav{
+    display: none;
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+}
+
+footer{
+    margin-top: 4%;
+    padding: 2% 0;
+    background-color: #ebebeb;;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;    
+}
+
+
+#icon-footer{
+    font-size: 4em;
+    color:#1259c3 ;
+}
+
+#icon-header{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.articles{
+    margin-bottom: 10px;
+    border-top: #ebebeb 1px solid;
+    padding: 15px;
+}
+.headline {
+    font-size: 24px;
+}
+.price {
+    display:block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.discount{
+    display: block;
+    font-size: 16px;
+    color:#39b54a;
+}
+.description {
+    display: none;
+    font-size: 16px;
+}
+.footer-title{
+    font-size:18px;
+    font-weight: bold;
+}
+.fa-bars{
+    background-color:#1259c3;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.fa-truck{
+    font-size: 2em;
+    padding: 5px;
+    border:1px #39b54a solid;
+    border-radius: 60px;
+    color: #39b54a;
+}
+
+/*----------------------------------Media querys--------------------------------*/
+
+@media ( min-width:361px ) {
+    nav{
+        display: block;
+    }
+    
+    .description{
+        display: block;
+    }
+}
+
+@media ( min-width:769px ) {
+    .articles{
+        box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.75);
+    }
+}
+
