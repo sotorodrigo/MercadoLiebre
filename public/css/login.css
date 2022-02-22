@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    font-size: 16px;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+footer {
+    margin-top: 4%;
+    padding: 2% 0;
+    background-color: #ebebeb;
+    border-top: 1px solid black;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#icon-footer {
+    font-size: 4em;
+    color: #1259c3;
+}
+
+#icon-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.articles {
+    margin-bottom: 10px;
+    border-top: #ebebeb 1px solid;
+    padding: 15px;
+    background-color: white;
+}
+
+.article-text {
+    border-top: 0.5px grey solid;
+    position: relative;
+    margin: 1%;
+    padding: 6%;
+}
+
+.banner {
+    min-width: 100vw;
+}
+
+.buy {
+    width: 100%;
+    margin: 1vh 0;
+}
+
+.copyright{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 1vh 1vw;
+}
+
+.description {
+    display: none;
+    font-size: 26px;
+    text-align: left;
+}
+
+.discount {
+    display: block;
+    font-size: 20px;
+    color: #39b54a;
+    padding-left: 5%;
+}
+
+.fa-bars {
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-truck {
+    font-size: 2em;
+    padding: 5px;
+    border: 1px #39b54a solid;
+    border-radius: 60px;
+    color: #39b54a;
+    position: absolute;
+    left: 80%;
+    top: -15%;
+
+}
+.footer-element{
+    padding: 1.5vh 0;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1vw;
+    align-items: center;
+}
+
+.headline {
+    font-size: 24px;
+    margin-bottom: 5vh;
+    margin-top:4vh;
+}
+
+.logo {
+    width: 50%;
+}
+
+.price {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pricedisc {
+    display: flex;
+    align-items: flex-end;
+    max-width: 80%;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.products-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchBar {
+    width: 50%;
+    align-items: center;
+    margin: auto;
+}
+.search-input{
+    max-width: 48vw;
+    border-radius: 5px;
+    padding-left: 1vw;
+    width:75%
+}
+
+
+
+/*----------------------------------Media querys--------------------------------*/
+
+@media (min-width:361px) {
+    nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    nav li{
+        display: inline-block;
+    }
+    li{
+        display: block;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+    .description {
+        display: block;
+    }
+    .login{
+        width: 50%;
+    }
+    .login li{
+        width: 30%;
+        padding: 0 1%;
+    }
+    ul.sales{
+        width: 50%;
+        display: flex;        
+        justify-content: space-evenly;
+    }
+    .sales li{
+        padding: 0 1%;   
+    }
+    
+}
+
+@media (min-width:769px) {
+    .articles {
+        box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.75);
+
+        max-width: 48%;
+        margin: 1% 1%;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .searchBar {
+        width: 30%;
+    }
+
+    .buy {
+        width: 35%;
+    }
+}
+
+@media (min-width:1200px) {
+    .articles {
+        max-width: 22%;
+        margin: 1% 1%;
+    }
+   
+    .headline {
+        font-size: 40px;
+    }
+}
