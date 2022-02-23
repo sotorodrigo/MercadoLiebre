@@ -11,7 +11,8 @@ body {
     font-family: roboto, sans-serif;
     font-size: 12px;
     text-align: center;
-    background-color: #ebebeb;
+    background-color: #ffffff;
+    justify-content: center;
 }
 
 header {
@@ -26,6 +27,8 @@ nav {
 main {
     width: 90vw;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -33,6 +36,10 @@ footer {
     padding: 2% 0;
     background-color: #ebebeb;
     border-top: 1px solid black;
+}
+
+form.register-form{
+    width: 50vw;
 }
 
 img {
@@ -98,6 +105,8 @@ ul {
     padding-left: 5%;
 }
 
+
+
 .fa-bars {
     background-color: #1259c3;
     color: white;
@@ -126,6 +135,10 @@ ul {
     font-size: 18px;
     font-weight: bold;
 }
+form div{
+    margin: 16px 1vh;
+    text-align: left;    
+}
 
 .header-top {
     display: flex;
@@ -139,9 +152,38 @@ ul {
     margin-bottom: 5vh;
     margin-top:4vh;
 }
+.sell-buy-label{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.sell-or-buy{
+    width: 100%;
+    margin: 8px;
+}
 
-.logo {
-    width: 50%;
+.radioss{
+    font-weight: 100;
+    margin-top: 0px ;
+}
+
+
+
+label{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.interests{
+    display: block;
+}
+
+
+
+
+a.logo {
+    width: 25vw;
 }
 
 .price {
@@ -163,6 +205,21 @@ ul {
     flex-wrap: wrap;
 }
 
+.register-form{
+    font-size: 16px;
+    width: 60vw;
+    background-color: #ebebeb;
+    padding: 2vh;
+       
+}
+
+.register-form input.table {
+    width: 100%;
+    margin: 2px;
+    border-radius: 4px;
+    border: 0;
+}
+
 .searchBar {
     width: 50%;
     align-items: center;
@@ -172,7 +229,8 @@ ul {
     max-width: 48vw;
     border-radius: 5px;
     padding-left: 1vw;
-    width:75%
+    width:75%;
+    border:0;
 }
 
 
@@ -217,6 +275,10 @@ ul {
 }
 
 @media (min-width:769px) {
+    nav{
+        justify-content: space-between;
+    }
+    
     .articles {
         box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.75);
 
@@ -235,6 +297,15 @@ ul {
     .buy {
         width: 35%;
     }
+    ul.sales{
+        width: 40%;
+    }
+    ul.login{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 @media (min-width:1200px) {
@@ -245,5 +316,8 @@ ul {
    
     .headline {
         font-size: 40px;
+    }
+    ul.login{
+        width: 30%;
     }
 }

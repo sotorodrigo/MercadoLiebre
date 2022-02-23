@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="header-top">
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
+            <a href="/" class="logo"><img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" ></a>
             <div class="searchBar">
                 <input type="text" placeholder="Ingresa el producto que deseas buscar" class="search-input">
                 <button><i class="fa-solid fa-magnifying-glass" id="icon-search"></i></button>
@@ -43,16 +43,16 @@
 
     <main>
        
-        <form action="">
-            <div>
-                <label for="">Nombre de usuario</label>
-                <input type="text" placeholder="Ingrese su nombre de usuario">
+        <form action="" class="form-login">
+            <div class="div-a">                
+                <input type="text" class="input-class" placeholder="Ingrese su nombre de usuario" pattern=".{8,}" 
+               title="la contraseña debe contener al menos 8 caracteres" required>
             </div>
-            <div>
-                <label for="">Contraseña</label>
-                <input type="password" placeholder="Ingrese su contraseña">
+            <div class="div-b">
+                
+                <input type="password" class="input-class" placeholder="Ingrese su contraseña">
             </div>
-            <a href="/" class="button-login">Ingresar</a>
+            <button class="send-button">Enviar</button>
         </form>
 
 
