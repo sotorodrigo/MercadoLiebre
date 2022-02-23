@@ -6,16 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 body {
     font-family: roboto, sans-serif;
     font-size: 12px;
     text-align: center;
-    background-color: #ebebeb;
+    background-color: #ffffff;
+    justify-content: center;
 }
 
 header {
     background-color: #EAC926;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
     font-size: 16px;
 }
 
@@ -26,6 +34,8 @@ nav {
 main {
     width: 90vw;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -42,6 +52,16 @@ img {
 ul {
     list-style: none;
 }
+
+form div {
+    margin: 16px 1vh;
+    text-align: left;
+}
+
+form.register-form {
+    width: 50vw;
+}
+
 
 
 #icon-footer {
@@ -78,7 +98,7 @@ ul {
     margin: 1vh 0;
 }
 
-.copyright{
+.copyright {
     font-size: 14px;
     font-weight: bold;
     text-align: left;
@@ -97,6 +117,7 @@ ul {
     color: #39b54a;
     padding-left: 5%;
 }
+
 
 .fa-bars {
     background-color: #1259c3;
@@ -118,7 +139,8 @@ ul {
     top: -15%;
 
 }
-.footer-element{
+
+.footer-element {
     padding: 1.5vh 0;
 }
 
@@ -137,11 +159,32 @@ ul {
 .headline {
     font-size: 24px;
     margin-bottom: 5vh;
-    margin-top:4vh;
+    margin-top: 4vh;
+}
+
+
+.interests {
+    display: block;
+}
+
+
+ul.login li{
+    flex-grow: 1;
+    align-items: flex-end;
 }
 
 a.logo {
     width: 25vw;
+}
+
+.m-glass{
+    font-size: 1em;
+    border:0;
+    border-radius: 5px;
+    margin-left: -33px;
+    border: none;
+    outline: none;
+    background:transparent;
 }
 
 .price {
@@ -163,19 +206,56 @@ a.logo {
     flex-wrap: wrap;
 }
 
+.register-form {
+    font-size: 16px;
+    width: 60vw;
+    background-color: #ebebeb;
+    padding: 2vh;
+
+}
+
+.radioss {
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+.register-form input.table {
+    width: 100%;
+    margin: 2px;
+    border-radius: 4px;
+    border: 0;
+}
+
 .searchBar {
     width: 50%;
     align-items: center;
     margin: auto;
-}
-.search-input{
-    max-width: 48vw;
-    border-radius: 5px;
-    padding-left: 1vw;
-    width:75%;
-    border:0;
+    display: flex;
+    justify-content: center;
+    
 }
 
+.search-input {
+    max-width: 48vw;
+    border-radius: 100px;
+    padding-left: 1vw;
+    width: 100%;
+    border: none;
+    outline: none;
+    line-height: 35px;
+}
+
+.sell-buy-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.sell-or-buy {
+    width: 100%;
+    margin: 8px;
+}
 
 
 /*----------------------------------Media querys--------------------------------*/
@@ -186,42 +266,49 @@ a.logo {
         width: 100%;
         align-items: center;
     }
-    nav li{
+
+    nav li {
         display: inline-block;
     }
-    li{
+
+    li {
         display: block;
     }
-    
+
     .burger-menu {
         display: none;
     }
+
     .description {
         display: block;
     }
-    .login{
+
+    .login {
         width: 50%;
     }
-    .login li{
+
+    .login li {
         width: 30%;
         padding: 0 1%;
     }
-    ul.sales{
+
+    ul.sales {
         width: 50%;
-        display: flex;        
+        display: flex;
         justify-content: space-evenly;
     }
-    .sales li{
-        padding: 0 1%;   
+
+    .sales li {
+        padding: 0 1%;
     }
-    
+
 }
 
 @media (min-width:769px) {
-    nav{
+    nav {
         justify-content: space-between;
     }
-    
+
     .articles {
         box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.75);
 
@@ -240,15 +327,12 @@ a.logo {
     .buy {
         width: 35%;
     }
-    ul.sales{
+
+    ul.sales {
         width: 40%;
     }
-    ul.login{
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+
+    
 }
 
 @media (min-width:1200px) {
@@ -256,11 +340,12 @@ a.logo {
         max-width: 22%;
         margin: 1% 1%;
     }
-   
+
     .headline {
         font-size: 40px;
     }
-    ul.login{
-        width: 30%;
+
+    ul.login {
+        width: 40%;
     }
 }
