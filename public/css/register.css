@@ -20,6 +20,7 @@ body {
 header {
     background-color: #EAC926;
     font-size: 16px;
+    padding-bottom: 1vh;
 }
 
 label {
@@ -42,7 +43,12 @@ footer {
     margin-top: 4%;
     padding: 2% 0;
     background-color: #ebebeb;
-    border-top: 1px solid black;
+  
+}
+input{
+    line-height: 2em;
+    padding-left: 2%;
+    border-radius: 100px;
 }
 
 img {
@@ -58,9 +64,7 @@ form div {
     text-align: left;
 }
 
-form.register-form {
-    width: 50vw;
-}
+
 
 
 
@@ -72,6 +76,16 @@ form.register-form {
 #icon-header {
     font-size: 1.5em;
     margin-bottom: 10px;
+}
+a:visited{
+    color: black ;
+}
+#icon-footer{
+    margin-bottom: 1vh;
+    transition: 250ms;
+}
+#icon-footer:hover{
+    color:#39b54a;
 }
 
 
@@ -208,7 +222,7 @@ a.logo {
 
 .register-form {
     font-size: 16px;
-    width: 60vw;
+    width: 90vw;
     background-color: #ebebeb;
     padding: 2vh;
 
@@ -222,7 +236,6 @@ a.logo {
 .register-form input.table {
     width: 100%;
     margin: 2px;
-    border-radius: 4px;
     border: 0;
 }
 
@@ -309,6 +322,10 @@ a.logo {
         justify-content: space-between;
     }
 
+    .register-form {
+        width: 50vw;
+    }
+
     .articles {
         box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.75);
 
@@ -347,5 +364,14 @@ a.logo {
 
     ul.login {
         width: 40%;
+    }
+
+    .footer-element{
+        width: 30%;
+    }
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

@@ -6,28 +6,3 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 
-.form-login{
-    display:flex;
-    flex-direction: column;
-    height: 20vh;
-    margin: 2vh;
-    padding:2vh;
-    justify-content: flex-start;    
-    align-items: center;
-}
-
-.send-button{
-    width:60vw;
-    background-color: #1259c3;
-    padding: 8px 0px;
-    border-radius: 8px;
-    color: #ffffff;
-    border:0;
-}
-
-.input-class{
-    width: 60vw;
-    padding: 8px;
-    border-radius: 8px;
-    border:0;
-}

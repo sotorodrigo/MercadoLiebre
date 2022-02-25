@@ -20,6 +20,7 @@ body {
 header {
     background-color: #EAC926;
     font-size: 16px;
+    padding-bottom: 1vh;
 }
 
 label {
@@ -44,7 +45,7 @@ footer {
     
     padding: 2% 0;
     background-color: #ffffff;
-    border-top: 1px solid black;
+  
 }
 
 img {
@@ -74,6 +75,16 @@ form.register-form {
 #icon-header {
     font-size: 1.5em;
     margin-bottom: 10px;
+}
+a:visited{
+    color: black ;
+}
+#icon-footer{
+    margin-bottom: 1vh;
+    transition: 250ms;
+}
+#icon-footer:hover{
+    color:#39b54a;
 }
 
 
@@ -276,6 +287,11 @@ a.logo {
     border-radius: 8px;
     color: #ffffff;
     border:0;
+    transition: 450ms;
+}
+
+.send-button:hover{
+    background-color: #0022AA;
 }
 
 .input-class{
@@ -375,5 +391,13 @@ a.logo {
 
     ul.login {
         width: 40%;
+    }
+    .footer-element{
+        width: 100%;
+    }
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
